@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<widget id="com.bistudio.minidayz" version="1.4.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<name>Mini DAYZ</name>
+	<description>Mini DAYZ</description>
+	<author email="cannedbits@gmail.com">Mike Azovskikh</author>
+
+	<icon src="www/icon-256.png" width="256" height="256" density="xxxhdpi" />
+	<icon src="www/icon-128.png" width="128" height="128" density="xhdpi" />
+
+	<preference name="orientation" value="landscape" />
+	<preference name="fullscreen" value="true" />
+	<preference name="DisallowOverscroll" value="true" />
+	<preference name="AllowInlineMediaPlayback" value="true" />
+
+	<config-file parent="UIStatusBarHidden" platform="ios" target="*-Info.plist"><true/></config-file>
+	<config-file parent="UIViewControllerBasedStatusBarAppearance" platform="ios" target="*-Info.plist"><false/></config-file>
+
+	<preference name="AndroidPersistentFileLocation" value="Compatibility" />
+	<preference name="deployment-target" value="10.0" />
+	<preference name="android-minSdkVersion" value="19" />
+	<preference name="android-targetSdkVersion" value="27" />
+	<preference name="android-maxSdkVersion" value="27" />
+	<access origin="*" />
+	<access origin="https://hyperurl.co/*" />
+	<access origin="https://www.facebook.com/" />
+	<allow-navigation href="https://hyperurl.co/*" />
+	<allow-navigation href="https://www.facebook.com/*" />
+	<plugin name="cordova-plugin-inappbrowser" source="npm" />
+	<allow-intent href="http://*/*" />
+	<allow-intent href="https://*/*" />
+	<allow-navigation href="http://*/*" />
+	<allow-navigation href="https://*/*" />
+<framework src="com.android.support:support-v4:24.0.0" />
+	<plugin name="cordova-custom-config" />
+	<plugin name="cordova-plugin-file" />
+	<plugin name="cordova-plugin-inappbrowser" />
+	<plugin name="cordova-plugin-statusbar" />
+	<plugin name="cordova-plugin-whitelist" />
+	<plugin name="cordova-plugin-wkwebview-engine" />
+
+
+	<engine name="ios" />
+	<engine name="android" />
+</widget>
